@@ -9,12 +9,11 @@ services:
         restart: always
     stack-kibana:
         build: kibana/
+        #image: kibana:5.3.0
         depends_on:
             - stack-elasticsearch
         environment:
             - ELASTICSEARCH_URL=http://stack-elasticsearch:9200
-        volumes:
-            - ./kibana/kibana.yml:/opt/kibana/config/kibana.yml
         restart: always
     stack-nginx:
         image: nginx:1.11.8

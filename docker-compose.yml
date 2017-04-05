@@ -5,7 +5,7 @@ services:
         ports:
             - "9300:9300"
         volumes:
-            - ./elasticsearch/data:/usr/share/elasticsearch/data
+            - ./elasticsearch/data:/usr/share/elasticsearch/data:rw
         restart: always
     stack-kibana:
         build: kibana/
@@ -34,5 +34,5 @@ services:
             - stack-elasticsearch
         command: logstash -f /var/lib/logstash/logstash.conf
         volumes:
-            - ./logstash/:/var/lib/logstash
+            - ./logstash/:/var/lib/logstash:rw
         restart: always

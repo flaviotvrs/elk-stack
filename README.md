@@ -19,5 +19,7 @@ So, do these steps to use this template:
 Done.
 
 To access:
-kibana: http://YOUR_SERVER
-elasticsearch: http://YOUR_SERVER:5601
+
+  kibana: http://YOUR_SERVER
+
+  elasticsearch: http://YOUR_SERVER:5601

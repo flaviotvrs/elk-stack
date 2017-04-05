@@ -32,6 +32,8 @@ services:
         image: logstash:5.3.0
         depends_on:
             - stack-elasticsearch
+        ports:
+            - "5044:5044"
         command: logstash -f /var/lib/logstash/logstash.conf
         volumes:
             - ./logstash/:/var/lib/logstash:rw

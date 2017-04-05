@@ -9,7 +9,6 @@ services:
         restart: always
     stack-kibana:
         build: kibana/
-        #image: kibana:5.3.0
         depends_on:
             - stack-elasticsearch
         environment:

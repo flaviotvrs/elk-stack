@@ -1,4 +1,4 @@
-FROM kibana:5.3.0
+FROM kibana:5.0.0
 
 RUN apt-get update
 RUN apt-get install -y git

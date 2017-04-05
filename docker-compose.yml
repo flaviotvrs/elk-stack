@@ -12,7 +12,7 @@ services:
         environment:
             - ELASTICSEARCH_URL=http://stack-elasticsearch:9200
         volumes:
-            - ./conf/kibana/kibana.yml:/opt/kibana/config/kibana.yml
+            - ./kibana/kibana.yml:/opt/kibana/config/kibana.yml
         restart: always
     stack-nginx:
         image: nginx:1.11.8

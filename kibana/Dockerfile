@@ -7,7 +7,7 @@ RUN apt-get -y install zip
 RUN git clone https://github.com/sbeyn/kibana-plugin-gauge-sg.git /gauge-sg
 RUN sed 's/"version": ".*/"version": "5.3.0"/g' /gauge-sg/package.json > /gauge-sg/new_package.json
 RUN mv -f /gauge-sg/new_package.json /gauge-sg/package.json
-RUN zip -r /gauge-sg.zip /gauge-sg
+RUN zip -r /gauge-sg.zip /gauge-sg/*
 RUN kibana-plugin install file:///gauge-sg.zip
 
 

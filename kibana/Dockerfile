@@ -1,4 +1,4 @@
-FROM docker.elastic.co/kibana/kibana:5.3.0
+FROM kibana:5.3.0
 #MAINTAINER mlacerda@ciandt.com
 
 # install open or custom plugins

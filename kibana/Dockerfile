@@ -1,14 +1,15 @@
-FROM kibana:5.1.2
+FROM kibana:5.3.0
 
 RUN apt-get update
 RUN apt-get -y install git
 RUN apt-get -y install zip
+RUN mkdir /kibana
 
-RUN git clone https://github.com/sbeyn/kibana-plugin-gauge-sg.git /gauge-sg
-RUN sed 's/"version": ".*/"version": "5.3.0"/g' /gauge-sg/package.json > /gauge-sg/new_package.json
-RUN mv -f /gauge-sg/new_package.json /gauge-sg/package.json
-RUN cd /gauge-sg && zip -r /gauge-sg.zip *
-RUN kibana-plugin install file:///gauge-sg.zip
+RUN git clone https://github.com/sbeyn/kibana-plugin-gauge-sg.git /kibana/kibana-plugin-gauge-sg
+RUN sed 's/"version": ".*/"version": "5.3.0"/g' /kibana/kibana-plugin-gauge-sg/package.json > /kibana/kibana-plugin-gauge-sg/new_package.json
+RUN mv -f /kibana/kibana-plugin-gauge-sg/new_package.json /kibana/kibana-plugin-gauge-sg/package.json
+RUN zip -r /gauge-sg-5.3.0.zip /kibana
+RUN kibana-plugin install file:///gauge-sg-5.3.0.zip
 
 
 #RUN kibana-plugin install https://github.com/leandroandrade87/kibana-plugin-traffic-sg/releases/download/5.1.2/traffic-sg-5.1.2.zip

@@ -1,0 +1,25 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - C:\inetpub\logs\LogFiles\W3SVC*\*.log
+      encoding: UTF-8
+      ignore_older: 24h
+      close_inactive: 24h
+      multiline:
+        pattern: '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}'
+        negate: true
+        match: after
+  spool_size: 1024
+  registry_file: C:\Progra~1\filebeat\data\registry
+
+output:
+  logstash:
+    hosts: ["YOUR_LOGSTASH_SERVER:5044"]
+    bulk_max_size: 3000
+
+logging:
+  files:
+    path: C:\Progra~1\filebeat\logs
+    rotateeverybytes: 10485760
+    keepfiles: 5

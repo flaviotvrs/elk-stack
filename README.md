@@ -22,4 +22,4 @@ To access:
 
   kibana: http://YOUR_SERVER
 
-  elasticsearch: http://YOUR_SERVER:5601
+  elasticsearch: http://YOUR_SERVER:9200

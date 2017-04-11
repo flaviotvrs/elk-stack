@@ -14,7 +14,7 @@ So, do these steps to use this template:
   
   4- Enter on the cloned folder and run:
   
-  sudo docker-componse up --build -d
+  sudo docker-compose up --build -d
 
 Done.
 

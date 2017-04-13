@@ -1,0 +1,10 @@
+{
+  "title": "accesslogs-Total requests",
+  "visState": "{\"title\":\"accesslogs-Total requests\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"45\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}",
+  "uiStateJSON": "{}",
+  "description": "",
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+	"searchSourceJSON": "{\"index\":\"accesslogs-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "accesslogs-Requests by ServiceName",
+  "visState": "{\"title\":\"accesslogs - Requests by ServiceName\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"segment\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"serviceName:W3SVC1\",\"analyze_wildcard\":true}}},\"label\":\"Netuno\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"serviceName:W3SVC2\",\"analyze_wildcard\":true}}},\"label\":\"Publicador\"}]}}],\"listeners\":{}}",
+  "uiStateJSON": "{}",
+  "description": "",
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+	"searchSourceJSON": "{\"index\":\"accesslogs-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }
+}

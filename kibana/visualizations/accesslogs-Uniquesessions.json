@@ -1,0 +1,10 @@
+{
+  "title": "accesslogs-Unique sessions",
+  "visState": "{\"title\":\"accesslogs-Unique sessions\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"cookie.keyword\",\"customLabel\":\"Unique sessions\"}}],\"listeners\":{}}",
+  "uiStateJSON": "{}",
+  "description": "",
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+	"searchSourceJSON": "{\"index\":\"accesslogs-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+  }
+}

@@ -3,6 +3,7 @@ FROM kibana:5.3.0
 RUN apt-get update
 RUN apt-get -y install git
 RUN apt-get -y install zip
+RUN apt-get -y install curl
 
 RUN git clone https://github.com/sbeyn/kibana-plugin-gauge-sg.git /kibana/kibana-plugin-gauge-sg
 RUN sed 's/"version": ".*"/"version": "5.3.0"/g' /kibana/kibana-plugin-gauge-sg/package.json > /kibana/kibana-plugin-gauge-sg/new_package.json
@@ -38,3 +39,12 @@ RUN mv -f /kibana/kibana-plugin-prelert_swimlane_vis/new_package.json /kibana/ki
 RUN zip -r /prelert_swimlane_vis-5.3.0.zip /kibana
 RUN kibana-plugin install file:///prelert_swimlane_vis-5.3.0.zip
 RUN rm -R /kibana/kibana-plugin-prelert_swimlane_vis
+
+COPY dashboards /tmp/dashboards/
+COPY visualizations /tmp/visualizations/
+COPY config.sh /tmp/config.sh
+RUN chmod +x /tmp/config.sh	
+RUN sed -i -e 's/\r$//' /tmp/config.sh
+
+ENTRYPOINT ["/tmp/config.sh"]
+CMD ["kibana"]

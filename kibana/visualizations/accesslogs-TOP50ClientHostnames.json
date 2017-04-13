@@ -1,0 +1,10 @@
+{
+  "title": "accesslogs-TOP 50 ClientHostnames",
+  "visState": "{\"title\":\"accesslogs-TOP 50 ClientHostnames\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"clientHostname.keyword\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+  "uiStateJSON": "{}",
+  "description": "",
+  "version": 1,
+  "kibanaSavedObjectMeta": {
+	"searchSourceJSON": "{\"index\":\"accesslogs-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[{\"meta\":{\"index\":\"accesslogs-*\",\"negate\":true,\"key\":\"clientHostname.keyword\",\"value\":\"::1\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"clientHostname.keyword\":{\"query\":\"::1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+  }
+}

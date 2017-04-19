@@ -25,4 +25,5 @@ services:
             - "5044:5044"
         command: logstash -f /var/lib/logstash/logstash.conf
         volumes:
+            #- C:/inetpub/logs/LogFiles/:/accesslogs
             - ../logstash/:/var/lib/logstash

@@ -1,20 +1,26 @@
-{
-  "title": "AccessLogs",
-  "hits": 0,
-  "description": "",
-  "panelsJSON": "[{\"col\":1,\"id\":\"77804c20-1895-11e7-8b1a-61062fde4021\",\"panelIndex\":1,\"row\":5,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"eaa22ca0-1895-11e7-8b1a-61062fde4021\",\"panelIndex\":2,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"dd75b7d0-1896-11e7-8b1a-61062fde4021\",\"panelIndex\":3,\"row\":11,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f5c81de0-18a6-11e7-838d-6541c5329954\",\"panelIndex\":4,\"row\":3,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"3f497300-18a8-11e7-838d-6541c5329954\",\"panelIndex\":5,\"row\":17,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"f9c46e40-18a5-11e7-838d-6541c5329954\",\"panelIndex\":6,\"row\":1,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"ae885ee0-18a6-11e7-838d-6541c5329954\",\"panelIndex\":7,\"row\":3,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"5dec1440-18a6-11e7-838d-6541c5329954\",\"panelIndex\":8,\"row\":3,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"d0ca2a70-18a5-11e7-838d-6541c5329954\",\"panelIndex\":9,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"da793680-18df-11e7-afa2-c770ba6fc617\",\"panelIndex\":10,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4f60bd60-1bb5-11e7-b134-9d17102cb76e\",\"panelIndex\":11,\"row\":22,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"27c550d0-1bb6-11e7-b134-9d17102cb76e\",\"col\":1,\"row\":8}]",
-  "optionsJSON": "{\"darkTheme\":false}",
-  "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"P-12\":{\"vis\":{\"legendOpen\":false}}}",
-  "version": 1,
-  "timeRestore": true,
-  "timeTo": "now/w",
-  "timeFrom": "now/w",
-  "refreshInterval": {
-	"display": "Off",
-	"pause": false,
-	"value": 0
-  },
-  "kibanaSavedObjectMeta": {
-	"searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"accesslogs-*\",\"key\":\"host.keyword\",\"negate\":false,\"value\":\"SRVINOVACAN00\"},\"query\":{\"match\":{\"host.keyword\":{\"query\":\"SRVINOVACAN00\",\"type\":\"phrase\"}}}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+[
+  {
+    "_id": "b5b67560-ad1d-11e7-802a-659dff9435d7",
+    "_type": "dashboard",
+    "_source": {
+      "title": "AccessLogs",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":3,\"size_y\":2,\"panelIndex\":1,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8cs\",\"col\":1,\"row\":3},{\"size_x\":3,\"size_y\":2,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8m\",\"col\":4,\"row\":3},{\"size_x\":3,\"size_y\":2,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8e\",\"col\":7,\"row\":3},{\"size_x\":3,\"size_y\":2,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8c\",\"col\":10,\"row\":1},{\"size_x\":3,\"size_y\":2,\"panelIndex\":5,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8f\",\"col\":10,\"row\":3},{\"size_x\":12,\"size_y\":3,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8j\",\"col\":1,\"row\":5},{\"size_x\":12,\"size_y\":3,\"panelIndex\":7,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8k\",\"col\":1,\"row\":8},{\"size_x\":3,\"size_y\":2,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8h\",\"col\":1,\"row\":1},{\"size_x\":3,\"size_y\":2,\"panelIndex\":9,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8g\",\"col\":4,\"row\":1},{\"size_x\":3,\"size_y\":2,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8i\",\"col\":7,\"row\":1},{\"size_x\":6,\"size_y\":3,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8l\",\"col\":1,\"row\":11},{\"size_x\":6,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"1ca6c200-ad02-11e7-a545-cf85ea7a5a8d\",\"col\":7,\"row\":11}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-2\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-11\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"legendOpen\":false}},\"P-7\":{\"vis\":{\"legendOpen\":false}},\"P-5\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-3d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
   }
-}
+]

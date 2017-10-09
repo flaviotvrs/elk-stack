@@ -1,10 +1,16 @@
-{
-  "title": "accesslogs-Total requests",
-  "visState": "{\"title\":\"accesslogs-Total requests\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"45\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}",
-  "uiStateJSON": "{}",
-  "description": "",
-  "version": 1,
-  "kibanaSavedObjectMeta": {
-	"searchSourceJSON": "{\"index\":\"accesslogs-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
-  }
-}
+[
+	{
+		"_id": "1ca6c200-ad02-11e7-a545-cf85ea7a5a8h",
+		"_type": "visualization",
+		"_source": {
+			"title": "accesslogs-Total requests",
+			"visState": "{\"title\":\"accesslogs-Total requests\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"45\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}",
+			"uiStateJSON": "{}",
+			"description": "",
+			"version": 1,
+			"kibanaSavedObjectMeta": {
+				"searchSourceJSON": "{\"index\":\"accesslogs-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+			}
+		}
+	}
+]
